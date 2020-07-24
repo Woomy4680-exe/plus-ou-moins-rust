@@ -1,10 +1,13 @@
+use console::style; //For colors
 use std::io; //For get STDIN
 use rand::prelude::*;  //For generateRandom
+use console::Term; 
 fn main() {
-    println!("Plus ou moins");
     game();
 }
 fn game() {
+    cleanterm();
+    hello(); 
     let num = gen_number(); 
     let mut input = prompt_num();
     loop {
@@ -13,10 +16,10 @@ fn game() {
             println!("Bravo! Vous avez gagné!");
             exit(false);
         } else if input > num {
-            println!("Votre nombre est trop grand!");
+            writered("Votre nombre est trop grand!");
             input = prompt_num();
         } else {
-            println!("Votre nombre est trop petit!");
+            writered("Votre nombre est trop petit!");
             input = prompt_num();
         }
     } 
@@ -59,4 +62,25 @@ fn exit(err: bool) {
     } else {
         std::process::exit(0);
     }
+}
+fn cleanterm() {
+    let term = Term::stdout();
+    match term.clear_screen() {
+        Ok(_n) => {
+
+        }
+        Err(_e) => {
+            println!("");
+            println!("");
+            println!("");
+            println!("");
+        }
+    }
+}
+fn hello() {
+    println!("===========");
+    println!("Jeu du plus ou moins");
+}
+fn writered(text: &str) {
+    println!("{}", style(text).red());
 }

@@ -1,12 +1,18 @@
-use console::style; 
+use crate::lib::term::{
+    writecyan, 
+    writegreen, 
+    clear
+};
+ 
 /*
 All utils(exit process,...)    
 */
 
 // Prints welcome message
 pub fn hello() {
-    println!("{}", style("============================").cyan()); 
-    println!("{}", style("Jeu plus ou Moins en Rust").green());
-    println!("{}", style("Par Woomy4680-exe").green()); 
-    println!("{}", style("============================").cyan()); 
+    clear(); 
+    writecyan("============================");
+    writegreen("Jeu plus ou Moins en Rust");
+    writegreen("Par Woomy4680-exe");
+    writecyan("============================");
 }

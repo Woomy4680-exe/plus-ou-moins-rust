@@ -1,6 +1,6 @@
 [package]
 name = "plus-ou-moins"
-version = "0.1.0"
+version = "1.0.0"
 authors = ["Woomy4680-exe <matzar1808@gmail.com>"]
 edition = "2018"
 
@@ -8,3 +8,4 @@ edition = "2018"
 
 [dependencies]
 rand = "0.7.3"
+console = "0.11.3"

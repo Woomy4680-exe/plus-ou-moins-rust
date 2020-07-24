@@ -1,4 +1,7 @@
-use console::Term; 
+use console::{
+    style,
+    Term
+}; 
 /*
 Terminal manager(clear, colorprint)    
 */
@@ -16,4 +19,10 @@ pub fn clear() {
             //Clean du pauvre
         }
     }
+}
+pub fn writecyan(text: &str) {
+    println!("{}", style(text).cyan());
+}
+pub fn writegreen(text: &str) {
+    println!("{}", style(text).green());
 }

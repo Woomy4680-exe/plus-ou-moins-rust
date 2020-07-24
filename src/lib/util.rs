@@ -15,4 +15,6 @@ pub fn hello() {
     writegreen("Jeu plus ou Moins en Rust");
     writegreen("Par Woomy4680-exe");
     writecyan("============================");
+    println!("");
+    println!("");
 }

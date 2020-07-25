@@ -26,3 +26,6 @@ pub fn writecyan(text: &str) {
 pub fn writegreen(text: &str) {
     println!("{}", style(text).green());
 }
+pub fn writered(text: &str) {
+    println!("{}", style(text).green()); 
+}

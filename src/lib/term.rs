@@ -27,5 +27,5 @@ pub fn writegreen(text: &str) {
     println!("{}", style(text).green());
 }
 pub fn writered(text: &str) {
-    println!("{}", style(text).red()); 
+    println!("{}", style(text).on_red()); 
 }

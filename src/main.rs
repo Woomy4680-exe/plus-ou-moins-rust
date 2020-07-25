@@ -5,5 +5,4 @@ use crate::lib::{
 
 fn main() {
     util::hello(); 
-
 }

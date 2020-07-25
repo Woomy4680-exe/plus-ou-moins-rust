@@ -15,6 +15,15 @@ pub fn hello() {
     writegreen("Jeu plus ou Moins en Rust");
     writegreen("Par Woomy4680-exe");
     writecyan("============================");
-    println!("");
-    println!("");
 }
+pub fn intize(input: String) -> i32 {
+    match input.trim().parse::<i32>() {
+       Ok(i) => {
+          return i; 
+       }
+       Err(_e) => {
+          println!("Veuillez entrer un nombre valide!"); 
+          std::process::exit(1); 
+       }
+    } 
+ }

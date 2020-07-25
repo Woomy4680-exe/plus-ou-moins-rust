@@ -18,7 +18,6 @@ pub fn play() {
    let random = crate::lib::util::genrandom(); //Generate a random number beetween  1 and 50
    loop {
       
-      
       let inpt = input();
       if checknum(random, inpt) {
          println!("");
@@ -34,9 +33,15 @@ fn checknum(rnd: i32, userin: i32) -> bool{
       writecyan("Votre nombre est correct! Bravo");
       return true;
    } else if rnd > userin {
+      clear();
+      hello();
+      println!("{}", userin);
       writered("Votre nombre est trop petit!");
       return false;
    } else {
+      clear();
+      hello();
+      println!("{}", userin);
       writered("Votre nombre est trop grand!");
       return false;
    }

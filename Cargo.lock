@@ -54,7 +54,7 @@ checksum = "bd7d4bd64732af4bf3a67f367c27df8520ad7e230c5817b8ff485864d80242b9"
 
 [[package]]
 name = "plus-ou-moins"
-version = "1.0.0"
+version = "2.0.0"
 dependencies = [
  "console",
  "rand",

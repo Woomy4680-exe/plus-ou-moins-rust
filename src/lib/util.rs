@@ -28,7 +28,7 @@ pub fn intize(input: String) -> i32 {
        }
     } 
 }
-pub fn genrandom() -> i16 {
+pub fn genrandom() -> i32 {
     return rand::thread_rng().gen_range(1, 50); 
 }
  

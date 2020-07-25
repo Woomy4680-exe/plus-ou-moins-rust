@@ -1,8 +1,5 @@
-mod lib; 
-use crate::lib::{
-    util
-};
-
+mod lib;
+use lib::game::play;
 fn main() {
-    util::hello(); 
+    play();
 }

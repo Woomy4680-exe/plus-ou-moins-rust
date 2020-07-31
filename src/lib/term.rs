@@ -16,6 +16,12 @@ pub fn clear() {
             println!("");
             println!("");
             println!("");
+            println!("");
+            println!("");
+            println!("");
+            println!("");
+
+
             //Clean du pauvre
         }
     }

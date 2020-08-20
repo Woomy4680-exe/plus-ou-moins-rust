@@ -1,3 +1,3 @@
-pub mod term; 
-pub mod util; 
-pub mod game; 
+pub mod game;
+pub mod term;
+pub mod util;

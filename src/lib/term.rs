@@ -1,31 +1,12 @@
-use console::{style, Term};
 /*
 Terminal manager(clear, colorprint)
 */
-pub fn clear() {
-    let terminal = Term::stdout();
-    match terminal.clear_screen() {
-        Ok(_n) => {}
-        Err(_e) => {
-            println!("");
-            println!("");
-            println!("");
-            println!("");
-            println!("");
-            println!("");
-            println!("");
-            println!("");
-
-            //Clean du pauvre
-        }
-    }
-}
 pub fn writecyan(text: &str) {
-    println!("{}", style(text).cyan());
+    println!("\x1b[96m{}\x1b[m", text);
 }
 pub fn writegreen(text: &str) {
-    println!("{}", style(text).green());
+    println!("\x1b[92m{}\x1b[m", text);
 }
 pub fn writered(text: &str) {
-    println!("{}", style(text).on_red());
+    println!("\x1b[91m{}\x1b[m", text);
 }

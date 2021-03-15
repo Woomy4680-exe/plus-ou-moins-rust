@@ -1,4 +1,4 @@
-use crate::lib::term::{clear, writecyan, writegreen};
+use crate::lib::term::{writecyan, writegreen};
 use rand::prelude::*;
 use std::io;
 /*
@@ -7,7 +7,6 @@ All utils(exit process,...)
 
 // Prints welcome message
 pub fn hello() {
-    clear();
     writecyan("============================");
     writegreen("Jeu plus ou Moins en Rust");
     writegreen("Par Woomy4680-exe");

@@ -1,10 +1,9 @@
 //Imports
-use crate::lib::term::{clear, writecyan, writegreen, writered};
+use crate::lib::term::{writecyan, writegreen, writered};
 use crate::lib::util::{getuserinput, hello, intize};
 
 //Main function
 pub fn play() {
-    clear();
     hello();
     let random = crate::lib::util::genrandom(); //Generate a random number beetween  1 and 50
     loop {
@@ -23,13 +22,11 @@ fn checknum(rnd: i32, userin: i32) -> bool {
         writecyan("Votre nombre est correct! Bravo");
         return true;
     } else if rnd > userin {
-        clear();
         hello();
         println!("{}", userin);
         writered("Votre nombre est trop petit!");
         return false;
     } else {
-        clear();
         hello();
         println!("{}", userin);
         writered("Votre nombre est trop grand!");
